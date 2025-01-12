@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.menu #nav {
+  position: relative;
+  text-decoration: none;
+}
+
+.menu #nav::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #cd4236;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.menu #nav:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.menu #nav:hover{
+    color: #cd4236;
+}
+
+ #hire1{
+  position: relative;
+  background-color: #1c375b;
+  color: #f5f5f5;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s;
+ }
+
+ #hire1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #cd4236;
+  z-index: -1;
+  transition: .5s;
+ }
+
+ #hire1:hover::before{
+  width: 100%;
+ }
+
+ #hire2{
+  position: relative;
+  background-color: #cd4236;
+  color: #f5f5f5;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+ }
+
+ #hire2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #1c375b;
+  z-index: -1;
+  transition: .5s;
+ }
+
+ #hire2:hover::before{
+  width: 100%;
+ }
+
+ #hire1:hover{
+  background-color: #cd4236;
+  color: #1c375b;
+ }
+
+ #hire2:hover{
+  background-color: #1c375b;
+  color: #cd4236;
+ }
+
+ #hero{
+  background-image: linear-gradient(to right, #1c375b, #43628D, #698CBF, #ffffff);
+ }
+
+#choosetx {
+  background-image: linear-gradient(to right, #cd4236, #753D49,#3A3955, #1c375b);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  color: transparent;
+}
+
+#abouttitle{
+  
+    font-family: 'Josefin Sans', sans-serif;;
+  }
+
+
+
